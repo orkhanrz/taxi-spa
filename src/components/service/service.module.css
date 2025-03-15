@@ -1,0 +1,43 @@
+.serviceItem {
+    background-color: var(--primary-clr);
+    padding: 30px 30px 40px 30px;
+    text-align: center;
+    box-shadow: 8px 4px 24px rgba(0, 0, 0, .3);
+}
+
+.serviceItem img {
+    border-radius: 8px;
+    width: 100%;
+    height: 334px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.serviceItem h3 {
+    text-transform: uppercase;
+    font-size: var(--fs-600);
+    margin-bottom: 24px;
+}
+
+.serviceItem p {
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-300);
+    line-height: var(--fs-650);
+    margin-bottom: 24px;
+}
+
+.serviceItem a {
+    text-transform: uppercase;
+    position: relative;
+    font-family: var(--ff-secondary);
+}
+
+.serviceItem a::after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--black-clr);
+}

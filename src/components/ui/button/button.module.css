@@ -1,0 +1,12 @@
+.btn {
+    background-color: var(--btn-clr);
+    color: var(--white-clr);
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: var(--ff-primary);
+}
+
+.btn:hover {
+    background-color: var(--btn-hover-clr);
+}

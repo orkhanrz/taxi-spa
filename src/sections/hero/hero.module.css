@@ -1,0 +1,76 @@
+.heroSection {
+	background-color: var(--primary-clr);
+}
+
+.heroContent {
+	font-family: var(--ff-secondary);
+	display: flex;
+	flex-wrap: wrap;
+	min-height: 74vh;
+}
+
+.heroLeft {
+	padding-top: 188px;
+	padding-left: 40px;
+}
+
+.heroLeft button {
+	font-size: 24px;
+	padding: 11px 71px;
+	letter-spacing: 3px;
+	font-weight: 600;
+}
+
+.heroLeft h1 {
+	color: var(--gray-txt);
+	font-size: var(--fs-500);
+	letter-spacing: 6px;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin-bottom: 14px;
+}
+
+.heroLeft h2 {
+	color: var(--gray-txt);
+	font-size: var(--fs-850);
+	font-weight: 600;
+	line-height: var(--fs-850);
+	margin-bottom: 88px;
+}
+
+.heroLeftOr {
+	font-size: var(--fs-700);
+}
+
+.heroLeftOrNumber {
+	display: block;
+}
+
+.heroRight {
+	width: 50%;
+}
+
+.heroRight img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+@media screen and (max-width: 992px) {
+	.heroRight {
+		width: 100%;
+		margin-top: 16px;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.heroLeft {
+		padding-left: initial;
+		text-align: center;
+	}
+
+	.heroLeftOr {
+		display: block;
+		margin: 2px 0 8px 0;
+	}
+}

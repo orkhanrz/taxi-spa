@@ -1,0 +1,28 @@
+.headerContent {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    padding: 24px 0;
+}
+
+.headerLogo {
+    height: 32px;
+}
+
+.burgerMenu {
+	width: 24px;
+	aspect-ratio: 1;
+    cursor: pointer;
+}
+
+.burgerMenu:hover span {
+    background-color: var(--orange-clr);
+}
+
+.burgerMenu span {
+    display: block;
+	height: 3px;
+	width: 100%;
+    margin-bottom: 4px;
+	background-color: var(--gray-txt);
+}

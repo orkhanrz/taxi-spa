@@ -1,0 +1,197 @@
+.bookTripContent {
+	position: relative;
+}
+
+.bookTripBookNow {
+	background-color: var(--card-gray-clr);
+	width: 519px;
+	height: 519px;
+	margin-left: 62px;
+	padding: 50px 30px;
+	display: flex;
+	flex-direction: column;
+}
+
+.bookTripBookNow::after {
+	content: "";
+	position: absolute;
+	top: 77px;
+	left: 0;
+	width: 637px;
+	height: 603px;
+	background-color: var(--primary-clr);
+	z-index: -2;
+}
+
+.bookTripBookNow h2 {
+	font-size: var(--fs-850);
+	line-height: var(--fs-900);
+	margin-bottom: 24px;
+}
+
+.bookTripBookNow p {
+	font-family: var(--ff-secondary);
+	font-size: var(--fs-300);
+	line-height: var(--fs-650);
+}
+
+.bookTripBookNow button {
+	letter-spacing: 4px;
+	background-color: var(--primary-clr);
+	padding: 8px 40px;
+	font-size: var(--fs-300);
+	color: var(--black-clr);
+	align-self: flex-start;
+	margin-top: auto;
+}
+
+.bookTripBookNow button:hover {
+	background-color: var(--black-clr);
+	color: var(--white-clr);
+}
+
+.bookTripImg {
+	position: absolute;
+	top: 250px;
+	left: 274px;
+	width: 761px;
+	height: 580px;
+	z-index: -2;
+}
+
+.bookTripImg img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.bookTripInfo {
+	width: 600px;
+	height: 320px;
+	display: flex;
+	background-color: var(--primary-clr);
+	position: absolute;
+	top: 700px;
+	right: 18px;
+	z-index: -1;
+}
+
+.bookTripInfoRight img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.bookTripInfoLeft,
+.bookTripInfoRight {
+	width: 50%;
+}
+
+.bookTripInfoLeft {
+	padding: 80px 32px;
+}
+
+.bookTripInfoLeft h3 {
+	font-size: var(--fs-650);
+	margin-bottom: 20px;
+}
+
+.bookTripInfoLeft p {
+	font-family: var(--ff-secondary);
+	line-height: var(--fs-650);
+}
+
+@media screen and (max-width: 1200px) {
+	.bookTripImg {
+		left: 124px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.bookTripBookNow {
+		width: 449px;
+		height: 449px;
+	}
+
+	.bookTripImg {
+		left: 124px;
+		top: 340px;
+		width: 561px;
+		height: 380px;
+	}
+
+	.bookTripInfo {
+		width: 500px;
+		height: 300px;
+		top: 600px;
+		right: 0;
+	}
+
+    .bookTripInfoLeft {
+        padding: 60px 32px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .bookTripBookNow {
+        margin-left: initial;
+        margin: 0 auto;
+    }
+
+    .bookTripBookNow::after {
+        left: -54px;
+    }
+
+	.bookTripImg {
+		left: -16px;
+		top: 340px;
+		width: 561px;
+		height: 380px;
+	}
+
+	.bookTripInfo {
+		width: 500px;
+		height: 300px;
+		top: 600px;
+        right: 16px;
+	}
+
+    .bookTripInfoLeft {
+        padding: 60px 32px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+	.bookTripBookNow {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .bookTripBookNow p {
+        margin-bottom: 24px;
+    }
+
+    .bookTripBookNow::after {
+        width: 386px;
+        left: -38px;
+    }
+
+    .bookTripImg {
+        width: 386px;
+        left: -38px;
+    }
+
+    .bookTripInfo {
+        flex-direction: column;
+        top: 640px;
+        width: 386px;
+        left: -38px;
+        height: initial;
+    }
+
+    .bookTripInfoLeft, .bookTripInfoRight {
+        width: initial;
+        padding: 32px;
+    }
+}
+

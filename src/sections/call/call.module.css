@@ -1,0 +1,54 @@
+.call {
+	min-height: 80vh;
+	background-image: url("../../assets/images/london-taxi.jpg");
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+.callCard {
+	width: 460px;
+	background-color: var(--white-clr);
+	text-align: center;
+	padding-bottom: 64px;
+}
+
+.callCard img {
+	width: 220px;
+}
+
+.cardPhone {
+	margin-bottom: 32px;
+}
+
+.cardPhone h3 {
+	font-family: var(--ff-secondary);
+	font-size: var(--fs-650);
+	font-weight: 300;
+}
+
+.cardPhone h4 {
+	font-family: var(--ff-secondary);
+	font-size: var(--fs-600);
+	font-weight: 400;
+}
+
+@media screen and (max-width: 992px) {
+	.callCard {
+		width: 320px;
+	}
+
+	.cardPhone h3 {
+		font-size: var(--fs-600);
+	}
+
+	.cardPhone h4 {
+		font-size: var(--fs-500);
+	}
+}
+
+@media screen and (max-width: 576px) {
+	:root {
+		--container-w: 310px;
+	}
+}
