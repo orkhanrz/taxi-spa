@@ -6,6 +6,7 @@ import Transfers from "./sections/transfers/transfers";
 import TaxiCab from "./sections/taxi-cab/taxi-cab";
 import Call from "./sections/call/call";
 import BookTrip from "./sections/book-trip/book-trip";
+import Footer from "./components/footer/footer";
 
 function App() {
 	return (
@@ -15,8 +16,9 @@ function App() {
 			<Services />
 			<Transfers />
 			<TaxiCab />
-			<Call />
 			<BookTrip />
+			<Call />
+			<Footer />
 		</>
 	);
 }

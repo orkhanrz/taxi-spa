@@ -1,0 +1,91 @@
+.footer {
+	background-color: var(--primary-clr);
+}
+
+.footer p, .footer h4, .footer li {
+    font-family: var(--ff-secondary);
+    line-height: var(--fs-650);
+}
+
+.footerTop {
+	display: flex;
+    flex-wrap: wrap;
+	gap: 64px;
+	padding: 102px 26px;
+}
+
+.footerTopLeft,
+.footerTopMid,
+.footerTopRight {
+	flex: 1;
+}
+
+.footerTopLeft h3 {
+	font-size: var(--fs-700);
+	text-transform: uppercase;
+	margin-bottom: 32px;
+    width: min-content;
+}
+
+.footerTopLeft h4 {
+	font-size: var(--fs-400);
+	font-style: italic;
+	margin-bottom: 32px;
+	letter-spacing: 1px;
+}
+
+.footerTopLeft p {
+	font-size: var(--fs-300);
+	margin-bottom: 32px;
+}
+
+.footerLeftLinks {
+	display: flex;
+	gap: 8px;
+}
+
+.footerTopMidBox {
+	margin-bottom: 16px;
+}
+
+.footerTopMidBox h3 {
+    font-size: var(--fs-500);
+	text-transform: uppercase;
+	margin-bottom: 16px;
+}
+
+.footerTopMidBox li::marker {
+	content: "";
+}
+
+.footerTopMidBox li::before {
+	content: "✔";
+	font-size: 14px; 
+	margin-right: 8px;
+}
+
+.footerTopRight input, .footerTopRight textarea {
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-300);
+    padding: 12px;
+    width: 100%;
+    display: block;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.footerTopRight button {
+    padding: 12px 30px;
+    font-size: var(--fs-300);
+    font-family: var(--ff-secondary);
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.footerBottom {
+    font-size: var(--fs-200);
+    text-align: center;
+    color: var(--white-clr);
+    background-color: var(--btn-clr);
+    padding: 32px 0;
+}

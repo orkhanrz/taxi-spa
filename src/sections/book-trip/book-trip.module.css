@@ -1,5 +1,6 @@
 .bookTripContent {
 	position: relative;
+	height: 143vh;
 }
 
 .bookTripBookNow {
@@ -102,12 +103,20 @@
 }
 
 @media screen and (max-width: 1200px) {
+	.bookTripContent {
+		height: 160vh;
+	}
+
 	.bookTripImg {
 		left: 124px;
 	}
 }
 
 @media screen and (max-width: 992px) {
+	.bookTripContent {
+		height: 143vh;
+	}
+
 	.bookTripBookNow {
 		width: 449px;
 		height: 449px;
@@ -162,6 +171,10 @@
 }
 
 @media screen and (max-width: 576px) {
+	.bookTripContent {
+		height: 175vh;
+	}
+
 	.bookTripBookNow {
         margin-left: 0;
         width: 100%;

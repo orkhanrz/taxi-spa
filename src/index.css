@@ -18,8 +18,12 @@ a {
 	color: inherit;
 }
 
-button {
+button, input, textarea {
 	font-family: inherit;
+}
+
+li {
+	list-style: none;
 }
 
 :root {
